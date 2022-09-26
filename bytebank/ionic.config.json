@@ -1,0 +1,7 @@
+{
+  "name": "bytebank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
