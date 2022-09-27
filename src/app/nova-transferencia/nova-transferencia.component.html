@@ -1,14 +1,17 @@
 <section class="container">
+                      <!--(event bind) evento de submit do angular -->
   <form class="formulario" (ngSubmit)="transferir()">
     <h2 class="formulario__titulo">Nova Transferência</h2>
 
     <div class="form-field">
       <label class="form-field__label" for="valor">Valor</label>
+<!-- two-way data bind [(ngModel)] tanto do compondente para o template quanto do template para o componente -->
       <input class="form-field__input" id="valor" type="number" [(ngModel)]="valor" name="valor">
     </div>
 
     <div class="form-field">
       <label class="form-field__label" for="destino">Destino</label>
+<!-- property bind [ngModel] pega o valor do componente e traz para o templete -->
       <input class="form-field__input" id="destino" type="text" [(ngModel)]="destino" name="destino">
     </div>
 

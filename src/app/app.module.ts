@@ -10,9 +10,10 @@ import { registerLocaleData } from '@angular/common';
 
 registerLocaleData( localePt, 'pt');
 
-@NgModule({
+@NgModule({ 
   declarations: [ AppComponent, NovaTransferenciaComponent, ExtratoComponent ],
   imports: [ BrowserModule, FormsModule ],
+  //imports: [ BrowserModule, FormsModule ],
   providers: [
     {
       provide: LOCALE_ID, useValue: 'pt' },
