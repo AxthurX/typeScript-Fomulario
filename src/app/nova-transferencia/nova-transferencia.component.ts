@@ -14,6 +14,8 @@ export class NovaTransferenciaComponent {
   valor: number;
   destino: number;
 
+  constructor() { }
+
   transferir() {
     console.log('Solicitada Uma nova transferencia');
     //emitimos o valor

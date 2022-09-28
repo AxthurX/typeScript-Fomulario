@@ -7,12 +7,13 @@ import { FormsModule } from '@angular/forms';
 import { ExtratoComponent } from './extrato/extrato.component';
 import  localePt  from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 registerLocaleData( localePt, 'pt');
 
-@NgModule({ 
+@NgModule({
   declarations: [ AppComponent, NovaTransferenciaComponent, ExtratoComponent ],
-  imports: [ BrowserModule, FormsModule ],
+  imports: [ BrowserModule, FormsModule, HttpClientModule ],
   //imports: [ BrowserModule, FormsModule ],
   providers: [
     {
