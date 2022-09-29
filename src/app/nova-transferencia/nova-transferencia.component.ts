@@ -33,7 +33,7 @@ export class NovaTransferenciaComponent {
       this.limparCampos();
       this.router.navigateByUrl('extrato')
     },
-    (error) => console.error(error)
+    //(error) => console.error(error)
   );
  }
 

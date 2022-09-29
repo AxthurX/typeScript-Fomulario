@@ -3,6 +3,7 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
+//CRIAMOS UM SERVICE E  MANTERMOS A RESPONSABILIDADE DE MANTER ESSES DADOS AQUI DENTRO DESSA CLASSE
 @Injectable({
   providedIn: 'root',
 })

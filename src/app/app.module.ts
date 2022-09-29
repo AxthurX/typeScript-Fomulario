@@ -10,6 +10,7 @@ import  localePt  from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
+//localização do brasil para quando usa algum tipo de localização usar os padroes brasileiros
 registerLocaleData( localePt, 'pt');
 
 @NgModule({
