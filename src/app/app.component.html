@@ -1,9 +1,17 @@
 <!--Não passo mais os dados pro paremetros ele sabe a maneira de como receber os dados  -->
 
 <!-- recebemos o valor atravez do evento -->
-<app-nova-transferencia
-  (aoTransferir)="transferir($event)">
-</app-nova-transferencia>
+<!-- <app-nova-transferencia></app-nova-transferencia> -->
 
 <!-- [transferencias]="transferencias" -->
-<app-extrato></app-extrato>
+<!-- <app-extrato></app-extrato> -->
+
+<header>
+  <a routerLink="extrato">Bytebank</a>
+  <a routerLink="nova-transferencia" routerLinkActive="ativo">Nova Transferência</a>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+

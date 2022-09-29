@@ -4,7 +4,7 @@
 //? = propiedade opcional
 export interface Transferencia {
   id?: number | string;
-  valor: number | string;
-  destino: string;
+  valor: number ;
+  destino: number | string;
   data?: string;
 }

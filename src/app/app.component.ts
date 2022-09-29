@@ -11,12 +11,9 @@ export class AppComponent {
   title = 'bytebank';
 //  transferencias: any[] = [];
 
-constructor(private service: TransferenciaService) {
+constructor(private service: TransferenciaService) {}
+//Antes ultizavamos ele para manter a comunicação entre os componentes. mas agora com services não precisamos ficar gerenciando isso atravez de um componente pai, os proprios componentes agora são dependentes, eles conseguem comunicar e fazer as coisas acontecer.
 
-  }
-
-  transferir($event) {
-	console.log("Chamando o evento do metodo transferir",$event)
-	this.service.adicionar($event)
-  }
+//  transferir($event) {
+//   	this.service.adicionar($event)  }
 }
